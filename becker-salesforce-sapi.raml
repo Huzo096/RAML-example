@@ -1,0 +1,41 @@
+#%RAML 1.0
+title: becker-salesforce-sapi
+
+version: v1
+protocols: [ HTTPS ]
+baseUri: https://localhost/api/{v1}
+
+mediaType: 
+  - application/json
+
+documentation:
+  - !include /Documentation/apiDoc.raml
+
+uses:
+  dataLib: Libraries/data-types.raml
+  resource: Libraries/resourceTypes.raml
+  
+/apiStatus:
+  type: resource.apiStatus
+
+/accounts:
+  type: resource.account     
+       
+/assets:
+  type: resource.asset
+
+/contacts:
+  type: resource.contact
+
+/orders:
+  type: resource.order
+
+/products2:
+  type: resource.product2  
+    
+/quotes:
+  type: resource.quote
+
+
+                    
+

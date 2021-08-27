@@ -1,0 +1,94 @@
+#%RAML 1.0 ResourceType
+
+get:
+  description: Get product2 
+  responses:
+    200:
+      body:
+        application/json:
+          type: dataLib.product2
+          example: !include /Examples/products2Example.raml    
+    400:
+      body:
+        application/json:
+          example: !include /Examples/Responses/400Example.raml
+    401:
+      body:
+        application/json:
+          example: !include /Examples/Responses/401Example.raml
+    403:
+      body:
+        application/json:
+          example: !include /Examples/Responses/403Example.raml
+    404:
+      body:
+        application/json:
+          example: !include /Examples/Responses/404Example.raml
+    500:
+      body:
+        application/json:
+          example: !include /Examples/Responses/500Example.raml 
+
+post:
+  description: Patch products2 
+  body:
+    application/json:
+      type: dataLib.product2
+      example: !include /Examples/products2Example.raml
+  responses:  
+        201:
+          body:
+            application/json:
+              example: !include ../Examples/Responses/201Example.raml
+        400:
+          body:
+            application/json:
+              example: !include /Examples/Responses/400Example.raml
+        401:
+          body:
+            application/json:
+              example: !include /Examples/Responses/401Example.raml
+        403:
+          body:
+            application/json:
+              example: !include /Examples/Responses/403Example.raml
+        404:
+          body:
+            application/json:
+              example: !include /Examples/Responses/404Example.raml
+        500:
+          body:
+            application/json:
+              example: !include /Examples/Responses/500Example.raml                  
+
+patch:
+  description: Patch products2 
+  body:
+    application/json:
+      type: dataLib.product2
+      example: !include /Examples/products2Example.raml
+  responses:  
+        200:
+          body:
+            application/json:
+              example: !include ../Examples/Responses/200Example.raml
+        400:
+          body:
+            application/json:
+              example: !include /Examples/Responses/400Example.raml
+        401:
+          body:
+            application/json:
+              example: !include /Examples/Responses/401Example.raml
+        403:
+          body:
+            application/json:
+              example: !include /Examples/Responses/403Example.raml
+        404:
+          body:
+            application/json:
+              example: !include /Examples/Responses/404Example.raml
+        500:
+          body:
+            application/json:
+              example: !include /Examples/Responses/500Example.raml                  

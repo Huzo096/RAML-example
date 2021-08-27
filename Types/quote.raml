@@ -1,0 +1,67 @@
+#%RAML 1.0 DataType
+
+type: array
+items:
+  type: object
+  properties:
+    ERPCountryAssignment__c?: string
+    Id?: string  
+    IsDeleted?: boolean
+    Name?: string 
+    CurrencyIsoCode?: string
+    CreatedDate?: string
+    CreatedById?: string
+    LastModifiedDate?: string
+    LastModifiedById?: string
+    SystemModstamp?: string
+    LastViewedDate?: string
+    LastReferencedDate?: string
+    Opportunity__c?: string
+    Account__c?: string  
+    BillingAccount__c?: string
+    Order__c?: string
+    Discount__c?: number
+    Tax__c?: number
+    ShippingandHandling__c?: number
+    Status__c?: string
+    IsPrimary__c?: boolean
+    ExpirationDate__c?: date-only
+    DocumentLanguage__c?: string
+    QuotePersonalIntroduction__c?: string
+    Description__c?: string
+    QuoteNumber__c?: string
+    ContactName__c?: string
+    Email__c?: string
+    Phone__c?: string
+    Subtotal__c?: number
+    TotalPrice__c?: number
+    GrandTotal__c?: number
+    QuoteGUID__c?: string
+    AccountGUID__c?: string
+    lineItems?:
+      type: array
+      items:
+        type: object
+        properties:
+          Id?: string  
+          IsDeleted?: boolean
+          Name?: string 
+          CurrencyIsoCode?: string
+          CreatedDate?: string
+          CreatedById?: string
+          LastModifiedDate?: string
+          LastModifiedById?: string
+          SystemModstamp?: string
+          LastActivityDate?: date-only
+          LastViewedDate?: string
+          LastReferencedDate?: string
+          Product__c?: string
+          SalesPrice__c?: number
+          Quantity__c?: number
+          Description__c?: string
+          Subtotal__c?: number
+          Discount__c?: number
+          TotalPrice__c?: number
+          Quote__c?: string
+          QuoteLineItemGUID__c?: string
+         

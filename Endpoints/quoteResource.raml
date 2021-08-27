@@ -1,0 +1,65 @@
+#%RAML 1.0 ResourceType
+
+post:
+  description: Create quotes
+  body:
+    application/json:
+        type: dataLib.quote
+        example: !include ../Examples/quotesExample.raml
+  responses:
+    201:
+      body:
+        application/json:
+          example: !include ../Examples/Responses/201Example.raml
+    400:
+      body:
+        application/json:
+          example: !include ../Examples/Responses/400Example.raml
+    401:
+      body:
+        application/json:
+          example: !include ../Examples/Responses/401Example.raml
+    403:
+      body:
+        application/json:
+          example: !include ../Examples/Responses/403Example.raml
+    404:
+      body:
+        application/json:
+          example: !include ../Examples/Responses/404Example.raml
+    500:
+      body:
+        application/json:
+          example: !include ../Examples/Responses/500Example.raml
+
+patch:
+  description: Patch quotes
+  body:
+    application/json:
+      type: dataLib.quote
+      example: !include ../Examples/quotesExample.raml
+  responses:
+    200:
+      body:
+        application/json:
+          example: !include ../Examples/Responses/200Example.raml
+    400:
+      body:
+        application/json:
+          example: !include ../Examples/Responses/400Example.raml
+    401:
+      body:
+        application/json:
+          example: !include ../Examples/Responses/401Example.raml
+    403:
+      body:
+        application/json:
+          example: !include ../Examples/Responses/403Example.raml
+    404:
+      body:
+        application/json:
+          example: !include ../Examples/Responses/404Example.raml
+    500:
+      body:
+        application/json:
+          example: !include ../Examples/Responses/500Example.raml
